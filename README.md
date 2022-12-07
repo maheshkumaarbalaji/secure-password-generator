@@ -1,1 +1,3 @@
-# secure-password-generator
+# Secure Password Generator
+
+*Developed using Angular*
