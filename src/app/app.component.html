@@ -1,0 +1,65 @@
+<div id="main_frame">
+  <div class="title">
+    PASSWORD GENERATOR
+  </div>
+  <div class="description">
+    Secure your emails and other accounts with a password that cannot be cracked by simple brute force methods. Scroll down and use the password generator to generate strong and secure passwords.<br /><br /><br /><br />
+    <a href="#main_section" class="btn btn-outline-warning customBtn" id="downBtn">
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+      Scroll Down
+    </a>
+  </div>
+</div>
+<div id="main_section">
+  <div class="message">
+    Enter password length, select required password components and click on <span style="color: #e6b800;"><b><u>Generate</u></b></span>  to create your secure password. 
+  </div>
+  <div class="alert alert-danger error_block" *ngIf="ErrorOccurred" role="alert">
+    <b>Sorry! An error occurred while creating secure password. It might hae been caused due to one of the below reasons:</b><br />
+    1. Password length might be less than 7 characters.<br />
+    2. Either digits or special characters must be selected before clicking on <b><u>Generate</u></b>.
+  </div>
+  <app-print-result *ngIf="passwordGenerated" [generatedPassword] = "reqdPassword" (close)="closePwdDisplay()" ></app-print-result>
+  <form #passwordGenerator="ngForm" (ngSubmit)="generatePassword()">
+    <div class="row">
+      <label class="col-2 adjustPadding" htmlFor="pwdLength">Password Length</label>
+      <div class="col-10">
+        <input type="number" [(ngModel)]="Length" name="pwdLength" class="form-control adjustWidth" placeholder="Total Length of password" required >  
+      </div>  
+    </div>
+    <hr />
+    <div class="row">
+      <div class="col-2">
+        <input type="checkbox" name="uppercase" class="checkbox" [disabled]="UpperCase" [(ngModel)]="UpperCase" required>  
+      </div> 
+      <label class="col-10" htmlFor="uppercase">Include Uppercase letters [A-Z]</label> 
+    </div>
+    <hr />
+    <div class="row">
+      <div class="col-2">
+        <input type="checkbox" name="lowercase" class="checkbox" [disabled]="LowerCase" [(ngModel)]="LowerCase" required>  
+      </div> 
+      <label class="col-10" htmlFor="lowercase">Include Lowercase letters [a-z]</label> 
+    </div>
+    <hr />
+    <div class="row">
+      <div class="col-2">
+        <input type="checkbox" name="digits" class="checkbox" [(ngModel)]="Digits" required>  
+      </div> 
+      <label class="col-10" htmlFor="digits">Include Digits [0-9]</label> 
+    </div>  
+    <hr />
+    <div class="row">
+      <div class="col-2">
+        <input type="checkbox" name="special" class="checkbox" [(ngModel)]="Special" required>  
+      </div> 
+      <label class="col-10" htmlFor="special">Include Special Characters [@,!,~,$,^,#]</label> 
+    </div>
+    <hr />
+    <div class="row">
+      <div class="col-4">
+        <input type="submit" class="btn btn-outline-warning customBtn" value="Generate">
+      </div>
+    </div>
+  </form> 
+</div>

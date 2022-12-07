@@ -1,0 +1,28 @@
+#print_result
+{
+    width:50%;
+    height:40%;
+    padding-left:4%;
+    padding-right:2%;
+    padding-top:8%;
+    font-size:125%;
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    z-index: 3;
+    background-color: #21232A;
+    color:whitesmoke;
+    border-radius:4px;
+    border:1px solid #FFA500;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#closeBtn
+{
+    position:absolute;
+    right:3%;
+    bottom:3%;
+}
