@@ -12,13 +12,13 @@
 
 ## About
 
-Secure Password Generator is a static web application developed used Angular and hosted on Azure platform. It allows users to generate a secure password for managing their emails and accounts. No registration is required to access the site. The users will have to enter the below details before they can generate the password:
+Secure Password Generator is a static web application developed using Angular and hosted on Azure platform. It allows users to generate a secure password for managing their emails and accounts. No registration is required to access the site. The users will have to enter the below details before they can generate the password:
 
 - Total length of the password to be generated.
 - Select checkbox to confirm if the password to be generated should contain numbers (0 to 9).
 - Select checkbox to confirm if the password to be generated should contain special characters.
 
-The process has some constraints which must be abided to generate a password successfully. These constraints are listed below:
+The process has some constraints which must be abided by the user, to generate a password successfully. These constraints are as follows:
 
 - Expected Password length should be more than 6.
 - Password to be generated will contain upper case and lower case characters by default and this cannot be customized.
@@ -35,7 +35,7 @@ If the constraints are violated, an error will be displayed on screen and passwo
 
 ## Tools Used
 
-- Angular CLI
-- Node Package Manager (NPM)
+- Angular CLI (Latest Version)
+- Node Package Manager (Latest Version)
 - Visual Studio Code
 - Git
