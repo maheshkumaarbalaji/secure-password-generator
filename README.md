@@ -38,4 +38,4 @@ If the constraints are violated, an error will be displayed on screen and passwo
 - Angular CLI (Latest Version)
 - Node Package Manager (Latest Version)
 - Visual Studio Code
-- Git
+- Git SCM
