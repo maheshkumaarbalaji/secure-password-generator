@@ -6,9 +6,9 @@
 
 ## Table of Contents
 
-- [About](https://github.com/cfts-mkb/secure-password-generator#about)
-- [Technologies Used](https://github.com/cfts-mkb/secure-password-generator#technologies-used)
-- [Tools Used](https://github.com/cfts-mkb/secure-password-generator#tools-used)
+- [About](https://github.com/maheshkumaarbalaji/secure-password-generator#about)
+- [Technologies Used](https://github.com/maheshkumaarbalaji/secure-password-generator#technologies-used)
+- [Tools Used](https://github.com/maheshkumaarbalaji/secure-password-generator#tools-used)
 
 ## About
 
@@ -22,8 +22,7 @@ The process has some constraints which must be abided by the user, to generate a
 
 - Expected Password length should be more than 6.
 - Password to be generated will contain upper case and lower case characters by default and this cannot be customized.
-- Password to be generated must contain either numbers (0 to 9) or special characters or both.
-
+- Password to be generated must contain either numbers (0 to 9) or special characters or both.maheshkumaarbalaji
 If the constraints are violated, an error will be displayed on screen and password will not be generated until these violations are corrected. Upon successful validation of options exercised by the user, a random password will be generated and displayed on a pop-up window.
 
 ## Technologies Used
